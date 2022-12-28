@@ -1,9 +1,25 @@
-a{
-    color: red;
-    text-decoration: none;
-    background-color: aquamarine;
+body{
+    font-family: Poppins;
 }
-
-b{
-    color: black;
+.weather-card{
+    background-color: rgb(48, 48, 48);
+    border-radius: 20px;
+    color: rgb(237, 237, 237);
+    display: flex;
+    .left{
+        flex: 2;
+        background-image: url("../img/bg\ \(1\).jpg");
+        background-size: cover;
+        background-position: center center;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h2, h4, h5{
+            margin:0;
+        }
+    }
+    .right{
+        flex:3;
+    }
 }

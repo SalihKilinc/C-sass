@@ -3,11 +3,12 @@ body {
 }
 
 .weather-card {
-  background-color: rgb(48, 48, 48);
+  background-color: #303030;
   border-radius: 20px;
-  color: rgb(237, 237, 237);
+  color: #ededed;
   display: flex;
 }
+
 .weather-card .left {
   flex: 2;
   background-image: url("../img/bg (1).jpg");
@@ -18,9 +19,11 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .weather-card .left h2, .weather-card .left h4, .weather-card .left h5 {
   margin: 0;
 }
+
 .weather-card .right {
   flex: 3;
-}/*# sourceMappingURL=style.css.map */
+}
