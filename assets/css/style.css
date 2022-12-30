@@ -1,3 +1,9 @@
+h1 {
+  color: rgb(177, 25, 25);
+  text-align: center;
+  display: block;
+}
+
 body {
   font-family: Poppins;
 }
@@ -10,7 +16,7 @@ body {
 }
 .weather-card > .left {
   flex: 2;
-  background-image: url("../img/bg (1).jpg");
+  background-image: url("../img/bg.jpg");
   background-size: cover;
   background-position: center center;
   border-radius: 20px;
@@ -18,9 +24,24 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
+  position: relative;
+}
+.weather-card > .left::before {
+  content: "";
+  background-color: rgba(57, 211, 6, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
 }
 .weather-card > .left h2, .weather-card > .left h4, .weather-card > .left h5 {
   margin: 0;
+  text-shadow: 0 0 5px rgb(133, 133, 133);
+}
+.weather-card > .left .top {
+  z-index: 3;
 }
 .weather-card > .left .top h2 {
   font-size: 2rem;
@@ -28,6 +49,9 @@ body {
 .weather-card > .left .top h4, .weather-card > .left .top h5 {
   font-size: 0.8rem;
   font-weight: 500;
+}
+.weather-card > .left .bottom {
+  z-index: 3;
 }
 .weather-card > .left .bottom h2, .weather-card > .left .bottom h4 {
   font-size: 3rem;
@@ -37,8 +61,8 @@ body {
   font-size: 0.8rem;
 }
 .weather-card > .right {
-  padding: 20px;
   flex: 3;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -46,8 +70,8 @@ body {
 }
 .weather-card > .right ul.status {
   list-style-type: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 .weather-card > .right ul.status li {
   display: flex;
@@ -55,8 +79,8 @@ body {
 }
 .weather-card > .right ul.days {
   list-style-type: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -67,13 +91,21 @@ body {
   padding: 2rem 1rem;
   border-radius: 20px;
 }
+.weather-card > .right ul.days li > span:nth-child(1) {
+  font-size: 2.5rem;
+}
+.weather-card > .right ul.days li > span:nth-child(3) {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
 .weather-card > .right ul.days li.active {
-  background-color: rgb(216, 211, 211);
-  color: rgb(61, 53, 53);
+  background-color: rgb(237, 237, 237);
+  color: rgb(48, 48, 48);
 }
 .weather-card > .right button {
-  padding: 15px;
+  padding: 0.5rem;
   border-radius: 20px;
-  border: none;
-  background-image: linear-gradient(62deg, yellow, blue);
+  border: 0;
+  cursor: pointer;
+  background-image: linear-gradient(60deg, rgb(150, 250, 146), rgb(57, 211, 6));
 }/*# sourceMappingURL=style.css.map */
