@@ -15,8 +15,10 @@ body {
   background-position: center center;
   border-radius: 20px;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 0;
   padding: 20px;
   position: relative;
 }
@@ -58,8 +60,10 @@ body {
   flex: 3;
   padding: 20px;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 0;
   gap: 2rem;
 }
 .weather-card > .right ul.status {
